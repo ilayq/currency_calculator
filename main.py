@@ -1,7 +1,5 @@
 import coinmarketcapapi
-
-
-API_KEY = '78aad556-a89a-4bf1-89ac-d3235f27afa9'
+from settings import API_KEY
 
 
 print('Currency to exchange(symbols):')
