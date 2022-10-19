@@ -12,5 +12,6 @@ amount = float(input())
 
 cmc = coinmarketcapapi.CoinMarketCapAPI(API_KEY)
 tool = cmc.tools_priceconversion(amount=amount, symbol=cur_currency, convert=needed_currency).data
+print(tool)
 print(tool['quote'][needed_currency.upper()]['price'])
 input()
